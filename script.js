@@ -4,9 +4,10 @@ var hitrn;
 
 //Creating bubbles with random numbers on them
 function makeBubble(){
+	var bubbleCount = Math.floor(window.innerWidth / 9);
 	var clutter = "";
 
-for(var i = 1; i<115; i++){
+for(var i = 1; i<bubbleCount; i++){
 	var rn = Math.floor(Math.random()*10)
 	clutter += `<div class="bubble">${rn}</div>`;
 }
